@@ -16,7 +16,6 @@
     a{color:var(--link); text-decoration:none}
     a:hover{text-decoration:underline}
 
-    /* Layout */
     header{padding:64px 20px 32px; text-align:center; position:relative}
     nav{position:sticky; top:0; background:rgba(15,17,21,.6); backdrop-filter: blur(10px); border-bottom:1px solid var(--line); z-index:10}
     nav .wrap{max-width:1100px; margin:0 auto; display:flex; align-items:center; gap:20px; padding:10px 16px}
@@ -29,28 +28,23 @@
     .subtitle{color:var(--muted)}
     .cta{margin-top:18px; display:inline-block; background:linear-gradient(90deg,var(--accent),var(--link)); color:#001014; padding:12px 16px; border-radius:12px; font-weight:700}
 
-    /* Sections */
     section{padding:48px 0;}
     section h2{font-size:clamp(22px,3vw,28px); margin:0 0 20px}
 
     .grid{display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(260px,1fr));}
     .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow)}
 
-    /* About */
     .about p{max-width:800px; color:var(--muted); line-height:1.6}
 
-    /* Education */
-    .edu-list{display:grid; gap:14px}
-    .edu{display:grid; gap:6px; padding:16px; border:1px solid var(--line); border-radius:14px; background:#121622}
-    .edu .when{font-weight:600; color:var(--accent)}
-    .edu .title{font-weight:700}
-    .edu .where{color:var(--muted)}
+    .edu-list, .exp-list{display:grid; gap:14px}
+    .edu, .exp{display:grid; gap:6px; padding:16px; border:1px solid var(--line); border-radius:14px; background:#121622}
+    .edu .when, .exp .when{font-weight:600; color:var(--accent)}
+    .edu .title, .exp .title{font-weight:700}
+    .edu .where, .exp .where{color:var(--muted)}
 
-    /* Portfolio */
     .project .meta{color:var(--muted); font-size:.95rem}
     .project ul{margin:10px 0 0 18px}
 
-    /* Footer */
     footer{padding:32px 20px; text-align:center; border-top:1px solid var(--line); color:var(--muted)}
   </style>
 </head>
@@ -60,6 +54,7 @@
       <div style="font-weight:800">Daniel Expósito Porras</div>
       <div style="margin-left:auto; display:flex; gap:4px; flex-wrap:wrap">
         <a href="#about">About</a>
+        <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
@@ -76,17 +71,43 @@
   </header>
 
   <main class="wrap">
-    <!-- ABOUT -->
     <section id="about" class="about">
       <h2>About</h2>
       <p>
-        I am a <strong>Game Programmer</strong> specialized in <strong>Unity</strong>, with 9+ years of experience building
-        and optimizing mobile games (iOS & Android) from prototype to launch. I enjoy collaborating closely with design and art to turn ideas into
-        playable experiences, with a strong focus on performance, quality and rapid iteration.
+        I am a <strong>Game Programmer</strong> specialized in <strong>Unity</strong>, with 9+ years of experience building and optimizing mobile games (iOS & Android) from prototype to launch. I enjoy collaborating closely with design and art to turn ideas into playable experiences, with a strong focus on performance, quality and rapid iteration.
       </p>
     </section>
 
-    <!-- EDUCATION -->
+    <section id="experience">
+      <h2>Working Experience</h2>
+      <div class="exp-list">
+        <div class="exp">
+          <div class="when">2023, March – Present · Remote</div>
+          <div class="title">Senior Unity Developer</div>
+          <div class="where">CODIGAMES</div>
+          <p>Game architecture, developing all types of game systems, UI, data structure, performance, and user experience. Working with all free‑to‑play methodology (In‑Apps, Ads, Gacha systems, etc.).</p>
+        </div>
+        <div class="exp">
+          <div class="when">2017, September – 2023, February · Hybrid in Málaga</div>
+          <div class="title">Unity Developer</div>
+          <div class="where">CAMPERO GAMES S.L.</div>
+          <p>Software architecture, AI, UI, data structure, performance. In‑App Purchases integration. Ad mediation integration (Fyber, Admob, Ironsource, Yodo1mas, SuperAwesome). Analytics systems integration (Firebase, Google Analytics, AppMetrica, DeltaDNA, UnityAnalytics, GameAnalytics).</p>
+        </div>
+        <div class="exp">
+          <div class="when">2016, November – 2017, September · Madrid</div>
+          <div class="title">Unity Developer</div>
+          <div class="where">LABCAVE S.L.</div>
+          <p>Maintenance, performance and automation. Ad mediation integration (Heyzap, Admob, IronSource). Analytics systems integration (Google Analytics, DeltaDNA). In‑App Purchases integration. Achievements, Leaderboards, Cross‑Promotions. Google Play Store & Apple Store management.</p>
+        </div>
+        <div class="exp">
+          <div class="when">2016, October · Málaga</div>
+          <div class="title">Unity Developer</div>
+          <div class="where">ALTIVASOFT S.L.</div>
+          <p>Development of a hunting 3D shooter free‑to‑play game for mobile devices.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="education">
       <h2>Education</h2>
       <div class="edu-list">
@@ -108,7 +129,6 @@
       </div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills">
       <h2>Skills</h2>
       <div class="grid">
@@ -127,7 +147,6 @@
       </div>
     </section>
 
-    <!-- PORTFOLIO -->
     <section id="portfolio">
       <h2>Portfolio</h2>
       <div class="grid">
@@ -145,7 +164,6 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact">
       <h2>Contact</h2>
       <div class="card">
