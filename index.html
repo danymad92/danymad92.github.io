@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tu Nombre | Unity Game Developer</title>
+  <style>
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#0f1115; color:#e6e9ef; }
+    header { padding:64px 24px; text-align:center; }
+    h1 { font-size: clamp(28px, 4vw, 44px); margin:0 0 12px; }
+    .tag { color:#00ffd5; font-weight:600; letter-spacing:.5px; }
+    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); padding:24px; max-width:1000px; margin:0 auto 64px; }
+    .card { background:#151923; border:1px solid #1f2430; border-radius:14px; padding:18px; }
+    .card h3 { margin:0 0 8px; }
+    a { color:#00c8ff; text-decoration:none; }
+    footer { text-align:center; padding:24px; opacity:.7; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="tag">Unity Game Developer</div>
+    <h1>Tu Nombre</h1>
+    <p>Gameplay • Optimización • Prototipado rápido</p>
+    <p><a href="#portfolio">Ver portfolio ↓</a></p>
+  </header>
+
+  <section class="grid" id="portfolio">
+    <article class="card">
+      <h3>Nombre del Juego</h3>
+      <p>Breve descripción (plataforma, género).</p>
+      <ul>
+        <li>Sistema de IA de enemigos (FSM/BT)</li>
+        <li>Optimizaciones: batching, pooling, LOD</li>
+        <li>Integración de analíticas y A/B tests</li>
+      </ul>
+      <p><a href="#" target="_blank">Tráiler</a> · <a href="#" target="_blank">Ficha</a></p>
+    </article>
+    <!-- Duplica más tarjetas para otros juegos -->
+  </section>
+
+  <footer>
+    <p>Contacto: tuemail@ejemplo.com · <a href="https://www.linkedin.com/">LinkedIn</a> · <a href="https://github.com/">GitHub</a> · <a href="https://itch.io/">itch.io</a></p>
+  </footer>
+</body>
+</html>
