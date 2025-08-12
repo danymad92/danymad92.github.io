@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Daniel Expósito Porras | Game Programmer</title>
-  <meta name="description" content="Game Programmer with 9+ years of Unity experience in mobile games (iOS & Android). Portfolio & resume of Daniel Expósito Porras." />
+  <meta name="description" content="Turning ideas into reality with Unity, I bring over 9 years of expertise crafting high-performance mobile games for iOS & Android." />
   <style>
     :root{
       --bg:#0f1115; --card:#151923; --muted:#a7b0c0; --line:#1f2430; --accent:#00ffd5; --link:#00c8ff; --text:#e6e9ef;
@@ -12,7 +12,7 @@
     }
     *{box-sizing:border-box}
     html,body{height:100%}
-    body{margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif; background:var(--bg); color:var(--text);}
+    body{margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif; background:var(--bg); color:var(--text)}
     a{color:var(--link); text-decoration:none}
     a:hover{text-decoration:underline}
 
@@ -26,26 +26,34 @@
     h1{font-size:clamp(28px,4.5vw,44px); margin:4px 0 8px}
     .tag{color:var(--accent); font-weight:700; letter-spacing:.4px; text-transform:uppercase; font-size:12px}
     .subtitle{color:var(--muted)}
-    .cta{margin-top:18px; display:inline-block; background:linear-gradient(90deg,var(--accent),var(--link)); color:#001014; padding:12px 16px; border-radius:12px; font-weight:700}
 
-    section{padding:48px 0;}
+    .profile-pic{width:140px; height:140px; border-radius:50%; object-fit:cover; margin:16px auto; display:block; border:3px solid var(--accent); box-shadow:var(--shadow)}
+
+    section{padding:48px 0}
     section h2{font-size:clamp(22px,3vw,28px); margin:0 0 20px}
 
-    .grid{display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(260px,1fr));}
+    .grid{display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(260px,1fr))}
     .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow)}
 
     .about p{max-width:800px; color:var(--muted); line-height:1.6}
+    .about ul{max-width:820px; margin:10px 0 0 18px; color:var(--muted)}
 
-    .edu-list, .exp-list{display:grid; gap:14px}
-    .edu, .exp{display:grid; gap:6px; padding:16px; border:1px solid var(--line); border-radius:14px; background:#121622}
-    .edu .when, .exp .when{font-weight:600; color:var(--accent)}
-    .edu .title, .exp .title{font-weight:700}
-    .edu .where, .exp .where{color:var(--muted)}
+    .edu-list, .exp-list, .extra-list{display:grid; gap:14px}
+    .edu, .exp, .extra{display:grid; gap:6px; padding:16px; border:1px solid var(--line); border-radius:14px; background:#121622}
+    .edu .when, .exp .when, .extra .when{font-weight:600; color:var(--accent)}
+    .edu .title, .exp .title, .extra .title{font-weight:700}
+    .edu .where, .exp .where, .extra .where{color:var(--muted)}
+
+    .company-row{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+    .btn-site{display:inline-block; padding:6px 10px; border-radius:999px; font-weight:700; background:linear-gradient(90deg,var(--accent),var(--link)); color:#001014; box-shadow:var(--shadow)}
+    .btn-site:hover{transform:translateY(-1px)}
 
     .project .meta{color:var(--muted); font-size:.95rem}
     .project ul{margin:10px 0 0 18px}
 
     footer{padding:32px 20px; text-align:center; border-top:1px solid var(--line); color:var(--muted)}
+
+    .spacer{height:40px}
   </style>
 </head>
 <body>
@@ -57,25 +65,37 @@
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
+        <a href="#additional">Additional Info</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
   </nav>
 
+  <div class="spacer"></div>
+
   <header class="wrap">
     <div class="tag">Game Programmer · Unity · Mobile Games (iOS & Android)</div>
     <h1>Daniel Expósito Porras</h1>
-    <p class="subtitle">Game Programmer, with more than 9 years of experience working with Unity on mobile games for iOS & Android, having developed several projects in the industry.</p>
-    <a class="cta" href="#portfolio">View portfolio ↓</a>
+    <img src="images/profile.jpg" alt="Daniel Expósito Porras" class="profile-pic">
+    <p class="subtitle">Turning ideas into reality with Unity, I bring over 9 years of expertise crafting high-performance mobile games for iOS & Android.</p>
   </header>
 
   <main class="wrap">
     <section id="about" class="about">
       <h2>About</h2>
       <p>
-        I am a <strong>Game Programmer</strong> specialized in <strong>Unity</strong>, with 9+ years of experience building and optimizing mobile games (iOS & Android) from prototype to launch. I enjoy collaborating closely with design and art to turn ideas into playable experiences, with a strong focus on performance, quality and rapid iteration.
+        I am a passionate lifelong gamer and <strong>Game Programmer</strong> specialized in <strong>Unity</strong>, with over 9 years of professional experience in the mobile games industry (iOS & Android). Throughout my career, I have built and optimized games from prototype to launch, consistently delivering engaging, high-performance experiences.
       </p>
+      <p>
+        I care deeply about <strong>clean, scalable code</strong> and sustainable development practices. I design systems with <strong>SOLID</strong> principles, composition over inheritance, and clear boundaries between gameplay, UI, and data layers. This approach keeps features modular and testable, reduces technical debt, and accelerates iteration for live-ops.
+      </p>
+      <ul>
+        <li><strong>Maintainability:</strong> clear architecture, dependency inversion, and small, cohesive components.</li>
+        <li><strong>Scalability:</strong> data-driven systems, Addressables, and continuous optimization efforts based on profiling insights, enabling stable performance as content scales.</li>
+        <li><strong>Quality:</strong> code reviews, automated builds, and analytics-informed rollouts for safe releases.</li>
+        <li><strong>Dependency Injection:</strong> leveraging Zenject to decouple systems, improve modularity, and enable easier testing and scalability through clear contract-based architecture.</li>
+      </ul>
     </section>
 
     <section id="experience">
@@ -84,26 +104,35 @@
         <div class="exp">
           <div class="when">2023, March – Present · Remote</div>
           <div class="title">Senior Unity Developer</div>
-          <div class="where">CODIGAMES</div>
-          <p>Game architecture, developing all types of game systems, UI, data structure, performance, and user experience. Working with all free‑to‑play methodology (In‑Apps, Ads, Gacha systems, etc.).</p>
+          <div class="where company-row">
+            <a class="btn-site" href="https://codigames.com" target="_blank" rel="noopener">CODIGAMES</a>
+          </div>
+          <p>Owning end‑to‑end <strong>game architecture</strong> for mobile titles, designing fully <strong>modular systems</strong> built with <strong>dependency injection</strong> (Zenject) and <strong>data‑driven pipelines</strong> (Scriptable Objects, Addressables, Remote Config). Delivering gameplay, UI and UX features with clear boundaries and testable components; optimising runtime and memory, and ensuring scalability for live‑ops content.</p>
+          <p>Implementing and evolving <strong>free‑to‑play</strong> mechanics and services — In‑App Purchases, ads/mediation, gacha, economy and events.</p>
         </div>
         <div class="exp">
           <div class="when">2017, September – 2023, February · Hybrid in Málaga</div>
           <div class="title">Unity Developer</div>
-          <div class="where">CAMPERO GAMES S.L.</div>
-          <p>Software architecture, AI, UI, data structure, performance. In‑App Purchases integration. Ad mediation integration (Fyber, Admob, Ironsource, Yodo1mas, SuperAwesome). Analytics systems integration (Firebase, Google Analytics, AppMetrica, DeltaDNA, UnityAnalytics, GameAnalytics).</p>
+          <div class="where company-row">
+            <a class="btn-site" href="https://es.linkedin.com/company/campero-games" target="_blank" rel="noopener">CAMPERO GAMES S.L.</a>
+          </div>
+          <p>Led <strong>game architecture</strong> and core systems development across multiple mobile titles, covering AI behaviours, UI flows, data modelling, and performance optimisation. Implemented and maintained monetisation features including <strong>In‑App Purchases</strong> and <strong>ad mediation</strong> (Fyber, AdMob, ironSource, Yodo1 MAS, SuperAwesome), ensuring reliability through SDK updates and store policy changes. Integrated analytics platforms (Firebase, Google Analytics, AppMetrica, deltaDNA, Unity Analytics, GameAnalytics).</p>
         </div>
         <div class="exp">
           <div class="when">2016, November – 2017, September · Madrid</div>
           <div class="title">Unity Developer</div>
-          <div class="where">LABCAVE S.L.</div>
-          <p>Maintenance, performance and automation. Ad mediation integration (Heyzap, Admob, IronSource). Analytics systems integration (Google Analytics, DeltaDNA). In‑App Purchases integration. Achievements, Leaderboards, Cross‑Promotions. Google Play Store & Apple Store management.</p>
+          <div class="where company-row">
+            <a class="btn-site" href="https://labcavegames.com/" target="_blank" rel="noopener">LABCAVE S.L.</a>
+          </div>
+          <p>Maintenance, performance and automation. Ad mediation integration (Heyzap, Admob, IronSource). Analytics systems integration (Google Analytics, DeltaDNA). In-App Purchases integration. Achievements, Leaderboards, Cross-Promotions. Google Play Store & Apple Store management.</p>
         </div>
         <div class="exp">
           <div class="when">2016, October · Málaga</div>
           <div class="title">Unity Developer</div>
-          <div class="where">ALTIVASOFT S.L.</div>
-          <p>Development of a hunting 3D shooter free‑to‑play game for mobile devices.</p>
+          <div class="where company-row">
+            <a class="btn-site" href="https://www.altivasoft.es/Inicio.html" target="_blank" rel="noopener">ALTIVASOFT S.L.</a>
+          </div>
+          <p>Developed a 3D hunting free‑to‑play mobile game for iOS & Android, implementing core gameplay systems such as shooting mechanics and animal behavior patterns (patrol, flee, aggro). Built extensive UI flows with a large number of in‑game menus and screens.</p>
         </div>
       </div>
     </section>
@@ -133,16 +162,38 @@
       <h2>Skills</h2>
       <div class="grid">
         <div class="card">
-          <h3>Programming</h3>
-          <p class="muted">C#, Unity (Gameplay, Editor Scripting, Addressables), patterns, architecture.</p>
+          <h3>Clean Architecture & SOLID</h3>
+          <p class="muted">SOLID principles, dependency inversion, composition over inheritance, clear domain/UI/data boundaries, modular feature design.</p>
         </div>
         <div class="card">
-          <h3>Performance</h3>
-          <p class="muted">Profiling, memory, batching, pooling, LODs, mobile optimization.</p>
+          <h3>Gameplay & Systems Programming</h3>
+          <p class="muted">C# for Unity, state machines & behavior trees, event-driven flows, editor tooling, UI frameworks, save/serialization.</p>
         </div>
         <div class="card">
-          <h3>Pipeline</h3>
-          <p class="muted">Git, CI/CD, integration with art & design, cross‑disciplinary communication.</p>
+          <h3>Data‑Driven & Content Pipeline</h3>
+          <p class="muted">Scriptable Objects, Addressables, Remote Config & feature flags, localization, build configuration for iOS/Android.</p>
+        </div>
+        <div class="card">
+          <h3>Performance & Optimization</h3>
+          <p class="muted">Profiling (CPU/GPU/Memory), GC pressure control, draw calls & batching, pooling, LODs, asset compression, startup & loading.</p>
+        </div>
+        <div class="card">
+          <h3>Tooling, Testing & CI/CD</h3>
+          <p class="muted">Custom editor tools, automated builds, unit & play mode tests, crash reporting, release pipelines, analytics‑informed rollouts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="additional">
+      <h2>Additional Information</h2>
+      <div class="extra-list">
+        <div class="extra">
+          <div class="title">Languages</div>
+          <p>English C1 level</p>
+        </div>
+        <div class="extra">
+          <div class="title">Driving License</div>
+          <p>B1 driving license, own car</p>
         </div>
       </div>
     </section>
@@ -182,7 +233,7 @@
   </footer>
 
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('y').textContent = new Date().getFullYear()
   </script>
 </body>
 </html>
